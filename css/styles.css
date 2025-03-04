@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: green;
+}
+
+header h1 {
+    text-align: center;
+    padding: 20px;
+    background-color: greenyellow;
+    color: white;
+    margin: 0px;
+}
+
+.horizontal-nav ul {
+    background-color: orange;
+    list-style: none;
+    text-align: center;
+    padding: 10px;
+    margin: 0%;
+}
+
+.horizontal-nav li {
+    display: inline-block; 
+    margin: 0 0px;
+}
+
+.horizontal-nav a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.horizontal-nav a:hover {
+    background-color: orangered;
+}
+
+.horizontal-nav .active {
+    background-color: rgba(255, 255, 0, 0.842);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 25% 1fr; 
+    grid-template-rows: auto 1fr;
+    grid-gap: 0;
+    
+}
+
+.left-col {
+    background-color: lightgray;
+    padding: 20px;
+    text-align: left;
+    list-style-type: none;
+    height: 270px;
+}
+
+.left-col h2 {
+    text-align: center;
+    background-color: palevioletred;
+    padding: 10px;
+    margin: 5px;
+}
+
+.vertical-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.vertical-nav li {
+    margin: 0;
+    padding: 0;
+}
+
+.vertical-nav a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    margin: 5px;
+    background-color: purple;
+    color: black;
+    text-align: center;
+}
+
+.vertical-nav a:hover {
+    background-color: pink;
+}
+
+.right-col {
+    background-color: white;
+    padding: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+
+.gallery-item {
+    width: 250px;
+    height: 400px;
+    border: 2px solid red;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    margin: 5px;
+}
+
+.gallery-item:hover {
+    border-color: blueviolet;
+}
+
+.gallery-item img {
+    width: auto;
+    height: 250px;
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: orange;
+    color: white;
+}
+
+
+.back-page {
+    height: 100vh;
+    background-color: #ec0707;
+    text-align: center;
+}
+
+.back-button {
+    padding: 15px 30px;
+    background-color: #0ce7d5;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    display: inline-block;
+    margin-top: 50vh; 
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
